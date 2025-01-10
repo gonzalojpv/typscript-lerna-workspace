@@ -1,7 +1,10 @@
 {
-  "name": "root",
+  "name": "core-root",
   "private": true,
-  "workspaces": [
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "packages": [
     "packages/*"
   ],
   "dependencies": {},

@@ -1,0 +1,33 @@
+{
+  "name": "xyz",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "gonzalojpv <gonzalojpv@gmail.com>",
+  "homepage": "https://github.com/gonzalojpv/typscript-lerna-workspace#readme",
+  "license": "ISC",
+  "main": "lib/xyz.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalojpv/typscript-lerna-workspace.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "node ./__tests__/xyz.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzalojpv/typscript-lerna-workspace/issues"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
