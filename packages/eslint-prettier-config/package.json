@@ -1,0 +1,34 @@
+{
+  "name": "@xyz/eslint-prettier-config",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "gonzalojpv <gonzalojpv@gmail.com>",
+  "homepage": "https://github.com/gonzalojpv/typscript-lerna-workspace#readme",
+  "license": "ISC",
+  "main": "index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalojpv/typscript-lerna-workspace.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jest": "^28.8.3",
+    "eslint-plugin-no-only-tests": "^3.3.0",
+    "eslint-plugin-no-skip-tests": "^1.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "prettier": "^3.4.2"
+  }
+}

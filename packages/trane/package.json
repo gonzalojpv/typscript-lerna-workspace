@@ -29,5 +29,8 @@
   },
   "devDependencies": {
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@xyz/eslint-prettier-config": "workspace:^"
   }
 }
