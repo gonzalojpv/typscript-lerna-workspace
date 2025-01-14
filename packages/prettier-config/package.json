@@ -1,11 +1,11 @@
 {
-  "name": "trane",
+  "name": "@xyz/prettier-config",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "gonzalojpv <gonzalojpv@gmail.com>",
   "homepage": "https://github.com/gonzalojpv/typscript-lerna-workspace#readme",
   "license": "ISC",
-  "main": "lib/trane.js",
+  "main": "lib/prettier-config.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -21,17 +21,12 @@
     "url": "git+https://github.com/gonzalojpv/typscript-lerna-workspace.git"
   },
   "scripts": {
-    "tsc": "tsc",
-    "test": "node ./__tests__/trane.test.js"
+    "test": "node ./__tests__/@xyz/prettier-config.test.js"
   },
   "bugs": {
     "url": "https://github.com/gonzalojpv/typscript-lerna-workspace/issues"
   },
-  "devDependencies": {
-    "typescript": "^5.7.3"
-  },
   "dependencies": {
-    "@xyz/eslint-config-typescript": "workspace:^",
-    "@xyz/prettier-config": "workspace:^"
+    "prettier": "^3.4.2"
   }
 }

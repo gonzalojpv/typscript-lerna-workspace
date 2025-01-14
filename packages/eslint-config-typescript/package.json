@@ -1,5 +1,5 @@
 {
-  "name": "@xyz/eslint-prettier-config",
+  "name": "@xyz/eslint-config-typescript",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "gonzalojpv <gonzalojpv@gmail.com>",
@@ -28,7 +28,6 @@
     "eslint-plugin-no-only-tests": "^3.3.0",
     "eslint-plugin-no-skip-tests": "^1.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-typescript": "^0.14.0",
-    "prettier": "^3.4.2"
+    "eslint-plugin-typescript": "^0.14.0"
   }
 }
