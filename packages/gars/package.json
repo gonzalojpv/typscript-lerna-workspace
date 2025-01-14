@@ -1,5 +1,5 @@
 {
-  "name": "xyz",
+  "name": "gars",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "gonzalojpv <gonzalojpv@gmail.com>",
@@ -11,19 +11,14 @@
     "url": "git+https://github.com/gonzalojpv/typscript-lerna-workspace.git"
   },
   "scripts": {
-    "tsc": "tsc"
-  },
-  "dependencies": {
-    "@xyz/eslint-config-typescript": "workspace:^",
-    "@xyz/prettier-config": "workspace:^",
-    "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
-    "zod": "^3.24.1"
+    "test": "node ./__tests__/gars.test.js"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "oauth-1.0a": "^2.2.6",
+    "xyz": "workspace:*",
+    "zod": "^3.24.1"
   }
 }
