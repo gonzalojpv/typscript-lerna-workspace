@@ -1,5 +1,5 @@
 import OAuth from "oauth-1.0a";
-import Logger from "xyz";
+import Logger from "xyz/src/utils/logger";
 
 interface NetSuiteClientConfig {
   consumerKey: string;
