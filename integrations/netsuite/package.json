@@ -1,0 +1,26 @@
+{
+  "name": "netsuite",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "gonzalojpv <gonzalojpv@gmail.com>",
+  "homepage": "https://github.com/gonzalojpv/typscript-lerna-workspace#readme",
+  "license": "ISC",
+  "main": "lib/netsuite.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalojpv/typscript-lerna-workspace.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/netsuite.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzalojpv/typscript-lerna-workspace/issues"
+  }
+}
