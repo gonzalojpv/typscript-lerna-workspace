@@ -13,6 +13,16 @@ importers:
         version: 8.1.9(encoding@0.1.13)
 
   integrations/demo:
+    dependencies:
+      '@xyz/eslint-config-typescript':
+        specifier: workspace:^
+        version: link:../../packages/eslint-config-typescript
+      '@xyz/prettier-config':
+        specifier: workspace:^
+        version: link:../../packages/prettier-config
+      xyz:
+        specifier: workspace:^
+        version: link:../../packages/xyz
     devDependencies:
       ts-node:
         specifier: ^10.9.2
@@ -20,6 +30,8 @@ importers:
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
+
+  integrations/gars: {}
 
   integrations/netsuite: {}
 
@@ -75,11 +87,46 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
 
+  packages/netsuite:
+    dependencies:
+      '@xyz/eslint-config-typescript':
+        specifier: workspace:^
+        version: link:../eslint-config-typescript
+      '@xyz/prettier-config':
+        specifier: workspace:^
+        version: link:../prettier-config
+      oauth-1.0a:
+        specifier: ^2.2.6
+        version: 2.2.6
+      xyz:
+        specifier: workspace:*
+        version: link:../xyz
+      zod:
+        specifier: ^3.24.1
+        version: 3.24.1
+    devDependencies:
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+
   packages/prettier-config:
     dependencies:
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
+
+  packages/salesforce:
+    dependencies:
+      '@xyz/eslint-config-typescript':
+        specifier: workspace:^
+        version: link:../eslint-config-typescript
+      '@xyz/prettier-config':
+        specifier: workspace:^
+        version: link:../prettier-config
+    devDependencies:
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
 
   packages/trane:
     dependencies:

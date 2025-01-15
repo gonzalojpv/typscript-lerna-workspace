@@ -6,4 +6,4 @@ parserOptions:
   sourceType: module
 
 extends:
-  - "@xyz/eslint-prettier-config"
+  - "@xyz/eslint-config-typescript"

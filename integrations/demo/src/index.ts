@@ -1,7 +1,10 @@
 import { initWorkOrderReadyFlow } from "./executionHandlers/createJobFlow";
+import Logger from "xyz/src/utils/logger";
 
 const netSuiteXyzFlow = () => {
-  console.log("NetSuite XYz Flow");
+  const logger = new Logger();
+
+  logger.log("NetSuite XYz Flow");
 
   initWorkOrderReadyFlow();
 };
