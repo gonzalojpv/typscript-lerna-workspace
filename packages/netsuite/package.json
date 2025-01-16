@@ -12,7 +12,9 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "format": "prettier --write .",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
     "typescript": "^5.7.3"
@@ -20,7 +22,7 @@
   "dependencies": {
     "@types/crypto-js": "^4.2.2",
     "@xyz/eslint-config-typescript": "workspace:^",
-    "@xyz/prettier-config": "workspace:^",
+    "@xyz/prettier-config": "workspace:*",
     "axios": "^1.7.9",
     "crypto-js": "^4.2.0",
     "oauth-1.0a": "^2.2.6",

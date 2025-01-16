@@ -1,6 +1,4 @@
-import { Options } from "prettier";
-
-const config: Options = {
+module.exports = {
   trailingComma: "es5",
   tabWidth: 2,
   useTabs: false,
@@ -26,5 +24,3 @@ const config: Options = {
     },
   ],
 };
-
-export default config;

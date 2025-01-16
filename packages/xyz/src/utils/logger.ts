@@ -1,15 +1,12 @@
 export type LogLevel = "info" | "warn" | "error" | "debug" | "log";
 
 export default class Logger {
-  // Instance property for the console instance
   private _console: Console;
 
   constructor() {
-    // Use the default console unless a custom one is provided
     this._console = console;
   }
 
-  // Method to set a custom console
   setConsole(customConsole: Console): void {
     this._console = customConsole;
   }
@@ -19,7 +16,7 @@ export default class Logger {
     level: LogLevel,
     action: string,
     message: string,
-    details?: Record<string, unknown>
+    details?: Record<string, unknown>,
   ): void {
     const timestamp = new Date().toISOString();
     const formattedMessage = `[${timestamp}] [${level.toUpperCase()}] [${action}] ${message}`;
@@ -65,7 +62,7 @@ export default class Logger {
 
   public error(
     message: string,
-    details?: Record<string, unknown> | Error
+    details?: Record<string, unknown> | Error,
   ): void {
     let errorDetails: Record<string, unknown> = {};
 

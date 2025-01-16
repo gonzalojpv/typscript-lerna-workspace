@@ -5,13 +5,16 @@
   "author": "gonzalojpv <gonzalojpv@gmail.com>",
   "homepage": "https://github.com/gonzalojpv/typscript-lerna-workspace#readme",
   "license": "ISC",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gonzalojpv/typscript-lerna-workspace.git"
   },
   "scripts": {
-    "tsc": "tsc"
+    "build": "rm -rf dist && tsc",
+    "lint": "eslint --ext .ts . --fix",
+    "format": "prettier --write .",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
     "@xyz/eslint-config-typescript": "workspace:^",
