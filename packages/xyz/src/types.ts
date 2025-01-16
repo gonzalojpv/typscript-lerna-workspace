@@ -1,3 +1,8 @@
+import { z } from "zod";
+import { WorkOrderEventSchema } from "./schemas";
+
+export type WorkOrderReadyEvent = z.infer<typeof WorkOrderEventSchema>;
+
 export interface Customer {
   name: string;
   email: string;
@@ -20,4 +25,16 @@ export interface JobCounterpart {
   contributeToJobDeepLinkUrl?: string;
   entireJobShareLinkUrl?: string;
   customerJobShareLinkUrl?: string;
+}
+
+export interface Job {
+  jobId: string;
+  jobName: string;
+  location: string;
+  assigneeIds: string[];
+  customerName: string;
+  workOrderNumber: string;
+  status: "in-progress" | "completed" | "pending";
+  createdAt: string;
+  updatedAt: string;
 }

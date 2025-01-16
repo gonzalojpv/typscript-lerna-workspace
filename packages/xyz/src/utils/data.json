@@ -1,0 +1,35 @@
+[
+  {
+    "jobId": "12345",
+    "jobName": "Install New HVAC System",
+    "location": "1234 Main St, Springfield",
+    "assigneeIds": ["user1", "user2"],
+    "customerName": "John Doe",
+    "workOrderNumber": "WO-00123",
+    "status": "in-progress",
+    "createdAt": "2025-01-15T10:00:00Z",
+    "updatedAt": "2025-01-16T12:30:00Z"
+  },
+  {
+    "jobId": "67890",
+    "jobName": "Repair Water Heater",
+    "location": "5678 Elm St, Springfield",
+    "assigneeIds": ["user3"],
+    "customerName": "Jane Smith",
+    "workOrderNumber": "WO-00456",
+    "status": "completed",
+    "createdAt": "2025-01-10T08:00:00Z",
+    "updatedAt": "2025-01-15T11:00:00Z"
+  },
+  {
+    "jobId": "11223",
+    "jobName": "Electric Panel Upgrade",
+    "location": "7890 Oak St, Springfield",
+    "assigneeIds": ["user4", "user5"],
+    "customerName": "Mike Johnson",
+    "workOrderNumber": "WO-00789",
+    "status": "pending",
+    "createdAt": "2025-01-12T09:15:00Z",
+    "updatedAt": "2025-01-16T14:45:00Z"
+  }
+]

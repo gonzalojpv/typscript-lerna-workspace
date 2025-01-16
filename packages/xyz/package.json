@@ -14,17 +14,22 @@
     "build": "rm -rf dist && tsc",
     "lint": "eslint --ext .ts . --fix",
     "format": "prettier --write .",
+    "test": "jest --verbose",
+    "test:watch": "jest --verbose --watch",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@jest/globals": "^29.7.0",
     "@xyz/eslint-config-typescript": "workspace:^",
     "@xyz/prettier-config": "workspace:^",
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
+    "lodash": "^4.17.21",
     "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
+    "@types/lodash": "^4.17.14",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "typescript": "^5.7.3"
