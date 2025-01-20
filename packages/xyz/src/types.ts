@@ -1,7 +1,13 @@
 import { z } from "zod";
-import { WorkOrderEventSchema } from "./schemas";
+import {
+  WorkOrderEventSchema,
+  JobShareSchema,
+  webhookPayloadSchema,
+} from "./schemas";
 
 export type WorkOrderReadyEvent = z.infer<typeof WorkOrderEventSchema>;
+export type JobShareInput = z.infer<typeof JobShareSchema>;
+export type WebhookPayload = z.infer<typeof webhookPayloadSchema>;
 
 export interface Customer {
   name: string;
@@ -13,18 +19,6 @@ export interface Location {
   city: string;
   state: string;
   zip: string;
-}
-
-export interface JobCounterpart {
-  id: string;
-  jobId: string;
-  assignee: string;
-  workOrderNumber: string;
-  customer: Customer;
-  location: Location;
-  contributeToJobDeepLinkUrl?: string;
-  entireJobShareLinkUrl?: string;
-  customerJobShareLinkUrl?: string;
 }
 
 export interface Job {

@@ -3,8 +3,12 @@ import Logger from "./utils/logger";
 import { delay } from "./utils/helper";
 import data from "./utils/data.json";
 import find from "lodash/find";
+import { v4 as uuidv4 } from "uuid";
 
-export const createJob = async (workOrderReadyEvent: WorkOrderReadyEvent) => {
+export const createJob = async (
+  workOrderReadyEvent: WorkOrderReadyEvent,
+): Promise<Job> => {
+  const now = new Date();
   const logger = new Logger();
 
   logger.log("Creating job...", workOrderReadyEvent);
@@ -12,7 +16,18 @@ export const createJob = async (workOrderReadyEvent: WorkOrderReadyEvent) => {
   await delay(1000);
 
   logger.log("Job created!");
-  return "createJob";
+
+  return {
+    jobId: uuidv4(),
+    jobName: workOrderReadyEvent.jobName,
+    location: workOrderReadyEvent.location,
+    assigneeIds: workOrderReadyEvent.assigneeIds,
+    customerName: workOrderReadyEvent.customerName,
+    workOrderNumber: workOrderReadyEvent.orderNumber,
+    createdAt: now.toISOString(),
+    updatedAt: now.toISOString(),
+    status: "in-progress",
+  };
 };
 
 export const getJobs = (): Job[] => {

@@ -1,7 +1,14 @@
 import Logger from "./utils/logger";
+import { JobShareInput } from "./types";
+import { delay } from "./utils/helper";
 
-export const createJobShare = (jobShare: string): void => {
+export const createJobShare = async (
+  jobShare: JobShareInput,
+): Promise<boolean> => {
   const logger = new Logger();
+  logger.info(`Creating job share.`, { jobShare });
 
-  logger.info(`Creating ${jobShare} job share.`);
+  await delay(500);
+
+  return true;
 };
